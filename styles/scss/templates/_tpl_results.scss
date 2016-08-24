@@ -1,0 +1,152 @@
+@import '../variables';
+@import '../mixins';
+
+.results_wrapper {
+  background-color: $theme_color;
+  padding: $main_padding $side_padding;
+  height: 100%;
+  width: 100%;
+}
+
+.players {
+  @include space-justify;
+    span {
+      font-size: 25px;
+      color: #121c25;
+      font-family: 'WalsheimBold';
+      font-weight: 600;
+    }
+}
+.score .results span {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #ffd5b8;
+  font-family: 'WalsheimBold';
+  font-weight: 600;
+}
+
+.title.results {
+  height: 40px;
+  font-size: 25px;
+  color: $light_color;
+  font-family: 'WalsheimLight';    
+}
+
+.result {
+  position: absolute;
+  top: 20px;
+  margin: 0 auto;
+  font-size: 45px;
+  color: #01d2bd;
+  font-family: 'WalsheimBold';
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.init-row .title.results
+.results_head {
+  @include space-justify;
+}
+
+label.btn {   
+  background-color: #121c25;
+  border-color: white;
+  color: white;
+  padding: 14px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'WalsheimLight';
+}
+
+label.btn:hover {
+  color: #ffffff;
+  cursor: pointer; 
+}
+
+.active {
+  background-color: $darker_theme!important;
+  color: $light_color!important;
+}
+
+.hand-animation {
+  width: 500px;
+  background-color: white;
+  height: 300px;
+  margin: 0 auto;
+  @include space-justify;
+  position:relative; 
+}
+
+.right-hand-rock {
+  z-index: 3;
+  position:absolute; 
+  right: 0px; 
+  width: initial;
+  height: initial;
+}
+
+.left-hand-rock {
+  position:absolute; 
+  left: 0px; 
+  z-index: 3;
+  width: initial;
+  height: initial;
+}
+
+.animate-shake {
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+  -webkit-animation-play-state: running;
+  -webkit-animation-duration: 0.8s; 
+  animation-name: example;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes example {
+    0%   {margin-top:0px;}
+    15%  {margin-top:-50px;}
+    30%  {margin-top:50px;}
+    45%  {margin-top:-50px;}
+    60% {margin-top:50px;}
+    75% {margin-top:-50px;}
+    90% {margin-top:50px;}
+    100% {margin-top:0px;} 
+}
+
+.right-hand-scissors, .right-hand-paper {
+  position:absolute; 
+  right: 0px; 
+  width: initial;
+  height: initial;
+}
+
+.left-hand-scissors, .left-hand-paper {
+  position:absolute; 
+  left: 0px; 
+  width: initial;
+  height: initial;
+}
+
+.init-row {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.init-row.score, .weapon-choice-row {
+  @include space-justify;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.weapon-choice-row .btn-group{
+  margin: auto;
+}
+
+
+
+
+
+    

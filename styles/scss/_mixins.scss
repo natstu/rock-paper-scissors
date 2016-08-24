@@ -1,0 +1,35 @@
+@mixin titles {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+@mixin func_btn {
+  border-radius: 5px!important;
+  background-color: white;
+  color: #121c25;
+  font-weight: 500;
+  font-family: WalsheimMedium;
+  margin-right: $primary_right;
+
+}
+
+@mixin align-row {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+
+@mixin space-justify {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin secondary-text {
+  text-align: left;
+  font-family: 'WalsheimLight';
+  font-size: 16px;
+}
+

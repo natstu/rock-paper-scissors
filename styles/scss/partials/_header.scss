@@ -1,0 +1,23 @@
+@import '../variables';
+@import '../mixins';
+
+#header {
+  background-color: $dark_background;
+  padding: $main_padding $side_padding;
+  height: $header_height;
+}
+
+.logo_head  div {
+  color: $light_color;
+  font: 30px 'WalsheimLight', sans-serif;
+  margin-bottom: $no_gap; 
+} 
+
+.logo_head  div span {
+  color: $light_text;
+  font: 100 30px 'WalsheimLight', sans-serif;
+}
+
+
+
+

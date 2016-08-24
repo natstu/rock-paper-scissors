@@ -1,0 +1,72 @@
+<!doctype html>
+    <html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/css/main.css">
+    </head>
+
+    <body ng-app="gameApp">
+        <div id="app" ng-controller="mainController">
+            <header id="header">
+                <!-- logo head -->
+                <div class="logo_head">
+                    <div>Rock Paper Scissors</div>
+                </div>
+            </header>
+            <!-- results -->
+            <div class="results_wrapper">
+                
+                <!-- gamers and weapons row -->
+                <div class="players">
+                    <!-- computer -->
+                    <span class="">Computer </span>
+                    <!-- user -->
+                    <span class="">You </span>
+                </div>
+
+                <div class="init-row score">
+                    <span class="title results" ng-model="lose">Loss: <span class="lose">{{lose | number}}</span></span>
+                    <span class="title results" ng-model="draw">Draw: <span  class="draw">{{draw | number}}</span></span>
+                    <span class="title results" ng-model="win">Win: <span  class="win">{{win | number}}</span></span>
+                </div>
+                <div class="init-row"><button class="init" ng-click="gameReinit()"><span class="title results">Start Again</span></button></div>
+
+                <div class="hand-animation col">
+                    <div class="result">{{result}}</div>
+                    <img class="left-hand-rock" src="assets/left-hand-rock.png">
+                    <img class="left-hand-paper" src="assets/left-hand-paper.png">
+                    <img class="left-hand-scissors" src="assets/left-hand-scissors.png">
+                    <img class="right-hand-rock" src="assets/right-hand-rock.png">
+                    <img class="right-hand-paper" src="assets/right-hand-paper.png">
+                    <img class="right-hand-scissors" src="assets/right-hand-scissors.png">
+                </div>
+
+                <div class="weapon-choice-row">
+                    <div class="btn-group" data-toggle="buttons" ng-hide="result !== ''">
+                        <label ng-repeat="weapon in weapons" class="btn {{weapon == userWeapon ? 'active' : ''}}"   for="title-input" ng-click="setWeapons(weapon)">
+                            <input id="title-input" type="radio" name="sort-group" value="TITLE" checked="" autocomplete="off"> {{weapon}}
+                        </label>
+                    </div> 
+                </div>
+
+                
+                
+                
+            </div>
+           
+        </div>
+        <!-- LIBRARIES -->
+        <script src="js/jquery-2.2.1.min.js"></script>
+        <script src="vendor/bootstrap.min.js"></script>
+        <script src="vendor/angular/angular.min.js"></script>
+       
+        
+        <!-- SCRIPTS-->
+        <script src="js/app.js"></script>
+    </body>
+</html>

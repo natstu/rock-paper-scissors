@@ -1,0 +1,446 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*FONTS*/
+@font-face {
+  font-family: 'WalsheimBold';
+  src: url("../../fonts/GT-Walsheim-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Bold?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../../fonts/GT-Walsheim-Bold.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Bold.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight';
+  src: url("../../fonts/GT-Walsheim-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Light?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Light.woff") format("woff"), url("../../fonts/GT-Walsheim-Light.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Light.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimMedium';
+  src: url("../../fonts/gt-walsheim-medium-web.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/gt-walsheim-medium-web?#iefix") format("embedded-opentype"), url("../../fonts/gt-walsheim-medium-web.woff") format("woff"), url("../../fonts/gt-walsheim-medium-web.ttf") format("truetype"), url("../../fonts/gt-walsheim-medium-web.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight-Oblique';
+  src: url("../../fonts/GT-Walsheim-Light-Oblique.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+/* HEIGHTS/SIZES*/
+/*COLOURS*/
+/*theme colours*/
+/*text colours*/
+/* PADDINGS */
+/*MARGINS*/
+/*FONTS*/
+@font-face {
+  font-family: 'WalsheimBold';
+  src: url("../../fonts/GT-Walsheim-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Bold?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../../fonts/GT-Walsheim-Bold.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Bold.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight';
+  src: url("../../fonts/GT-Walsheim-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Light?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Light.woff") format("woff"), url("../../fonts/GT-Walsheim-Light.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Light.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimMedium';
+  src: url("../../fonts/gt-walsheim-medium-web.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/gt-walsheim-medium-web?#iefix") format("embedded-opentype"), url("../../fonts/gt-walsheim-medium-web.woff") format("woff"), url("../../fonts/gt-walsheim-medium-web.ttf") format("truetype"), url("../../fonts/gt-walsheim-medium-web.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight-Oblique';
+  src: url("../../fonts/GT-Walsheim-Light-Oblique.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+/* HEIGHTS/SIZES*/
+/*COLOURS*/
+/*theme colours*/
+/*text colours*/
+/* PADDINGS */
+/*MARGINS*/
+#header {
+  background-color: #121c25;
+  padding: 20px 40px;
+  height: 80px; }
+
+.logo_head div {
+  color: #ffffff;
+  font: 30px 'WalsheimLight', sans-serif;
+  margin-bottom: 0px; }
+
+.logo_head div span {
+  color: #aebac8;
+  font: 100 30px 'WalsheimLight', sans-serif; }
+
+/*FONTS*/
+@font-face {
+  font-family: 'WalsheimBold';
+  src: url("../../fonts/GT-Walsheim-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Bold?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Bold.woff") format("woff"), url("../../fonts/GT-Walsheim-Bold.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Bold.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight';
+  src: url("../../fonts/GT-Walsheim-Light.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/GT-Walsheim-Light?#iefix") format("embedded-opentype"), url("../../fonts/GT-Walsheim-Light.woff") format("woff"), url("../../fonts/GT-Walsheim-Light.ttf") format("truetype"), url("../../fonts/GT-Walsheim-Light.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimMedium';
+  src: url("../../fonts/gt-walsheim-medium-web.eot");
+  /* IE9 Compat Modes */
+  src: url("../../fonts/gt-walsheim-medium-web?#iefix") format("embedded-opentype"), url("../../fonts/gt-walsheim-medium-web.woff") format("woff"), url("../../fonts/gt-walsheim-medium-web.ttf") format("truetype"), url("../../fonts/gt-walsheim-medium-web.svg") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'WalsheimLight-Oblique';
+  src: url("../../fonts/GT-Walsheim-Light-Oblique.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
+
+/* HEIGHTS/SIZES*/
+/*COLOURS*/
+/*theme colours*/
+/*text colours*/
+/* PADDINGS */
+/*MARGINS*/
+.results_wrapper {
+  background-color: #01d2bd;
+  padding: 20px 40px;
+  height: 100%;
+  width: 100%; }
+
+.players {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .players span {
+    font-size: 25px;
+    color: #121c25;
+    font-family: 'WalsheimBold';
+    font-weight: 600; }
+
+.score .results span {
+  margin-left: 10px;
+  font-size: 25px;
+  color: #ffd5b8;
+  font-family: 'WalsheimBold';
+  font-weight: 600; }
+
+.title.results {
+  height: 40px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'WalsheimLight'; }
+
+.result {
+  position: absolute;
+  top: 20px;
+  margin: 0 auto;
+  font-size: 45px;
+  color: #01d2bd;
+  font-family: 'WalsheimBold';
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.init-row .title.results
+.results_head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+label.btn {
+  background-color: #121c25;
+  border-color: white;
+  color: white;
+  padding: 14px;
+  font-size: 25px;
+  color: #ffffff;
+  font-family: 'WalsheimLight'; }
+
+label.btn:hover {
+  color: #ffffff;
+  cursor: pointer; }
+
+.active {
+  background-color: #019a8b !important;
+  color: #ffffff !important; }
+
+.hand-animation {
+  width: 500px;
+  background-color: white;
+  height: 300px;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative; }
+
+.right-hand-rock {
+  z-index: 3;
+  position: absolute;
+  right: 0px;
+  width: initial;
+  height: initial; }
+
+.left-hand-rock {
+  position: absolute;
+  left: 0px;
+  z-index: 3;
+  width: initial;
+  height: initial; }
+
+.animate-shake {
+  -webkit-animation-name: example;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 4s;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-play-state: running;
+  -webkit-animation-duration: 0.8s;
+  animation-name: example;
+  animation-duration: 0.8s; }
+
+.right-hand-scissors, .right-hand-paper {
+  position: absolute;
+  right: 0px;
+  width: initial;
+  height: initial; }
+
+.left-hand-scissors, .left-hand-paper {
+  position: absolute;
+  left: 0px;
+  width: initial;
+  height: initial; }
+
+.init-row {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.init-row.score, .weapon-choice-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.weapon-choice-row .btn-group {
+  margin: auto; }
+
+body {
+  background-color: #01d2bd; }
+
+.init {
+  background-color: #121c25;
+  border-color: #121c25;
+  padding: 6px;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=main.css.map */
